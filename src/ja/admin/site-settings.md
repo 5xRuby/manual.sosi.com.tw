@@ -6,7 +6,7 @@ title: "サイト全体設定"
 
 管理者がサイト全体設定で二要素認証を強制的に有効化すると、すべてのユーザーがログイン時に二要素認証コードの入力を求められます。
 
-![サイト全体 2FA 設定](/images/screenshots/zh/image064.jpg)
+![サイト全体 2FA 設定](/images/screenshots/ja/image064.jpg)
 
 ## メール設定
 

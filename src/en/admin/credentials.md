@@ -27,7 +27,7 @@ The system provides the following credential types based on different login requ
 
 **Delete Credential:** Remove credentials that are no longer in use from the system.
 
-![Credential List](/images/screenshots/zh/image042.jpg)
+![Credential List](/images/screenshots/en/image042.jpg)
 
 ## View Credential
 
@@ -35,4 +35,4 @@ The system provides the following credential types based on different login requ
 
 Administrators can use the dropdown menu here to select or search for devices to authorize for this credential, then click submit to complete the authorization.
 
-![View Credential](/images/screenshots/zh/image044.jpg)
+![View Credential](/images/screenshots/en/image044.jpg)

@@ -16,7 +16,7 @@ title: "ドメイン設定"
 - ドメインユーザーの同期
 - バインドテスト
 
-![ドメイン一覧](/images/screenshots/zh/image060.jpg)
+![ドメイン一覧](/images/screenshots/ja/image060.jpg)
 
 ## ドメインの追加
 
@@ -73,4 +73,4 @@ title: "ドメイン設定"
 - **同期用アカウント：** 同期機能使用時の LDAP サーバーのユーザーです。
 - **同期用アカウントのパスワード：** 同期機能使用時の LDAP サーバーのユーザーパスワードです。このフィールドは暗号化されます。
 
-![ドメインの追加](/images/screenshots/zh/image062.jpg)
+![ドメインの追加](/images/screenshots/ja/image062.jpg)

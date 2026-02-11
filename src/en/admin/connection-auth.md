@@ -16,14 +16,14 @@ Displays the group ID, name, and creation time.
 - **Edit Group:** Modify the group name.
 - **Delete Group**
 
-![Authorization Group List](/images/screenshots/zh/image046.jpg)
+![Authorization Group List](/images/screenshots/en/image046.jpg)
 
 ### View Group
 
 - **Group Information**
 - **Add User:** Restricted to administrators only
 
-![View Group](/images/screenshots/zh/image048.jpg)
+![View Group](/images/screenshots/en/image048.jpg)
 
 ## Connection Authorization Requests
 
@@ -41,7 +41,7 @@ Administrators can use this interface to view a snapshot of all current authoriz
 
 Supports filtering by "User Account", "Device Name", "Authorization Start/End Time", and "Permanent Authorization" status.
 
-![Authorized Device Overview](/images/screenshots/zh/image050.jpg)
+![Authorized Device Overview](/images/screenshots/en/image050.jpg)
 
 ### Create and Edit Connection Authorization
 
@@ -49,7 +49,7 @@ In the Authorized Device Overview, click the "Create Device Connection Authoriza
 
 Select the user account, device name, and authorization credential to configure.
 
-![Create Connection Authorization](/images/screenshots/zh/image052.jpg)
+![Create Connection Authorization](/images/screenshots/en/image052.jpg)
 
 > If no authorization credential is assigned, users will need to manually enter the remote host's username and password when establishing a connection.
 
@@ -76,4 +76,4 @@ When creating or editing a connection authorization, the following key fields mu
   - **Same as User Account:** When no credential is set, the system automatically uses the user's SOSI account to log in to the device.
   - **Specific User Account:** When no credential is set, the system enforces login using the specific account entered here.
 
-![Authorization Details](/images/screenshots/zh/image058.jpg)
+![Authorization Details](/images/screenshots/en/image058.jpg)

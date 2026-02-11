@@ -38,7 +38,7 @@ Administrators can access the device detail page via the "View" function to revi
 
 > Users with access permissions: This section shows the list of users currently authorized to use this device.
 
-![Device Information](/images/screenshots/zh/image020.jpg)
+![Device Information](/images/screenshots/en/image020.jpg)
 
 ### Connection Logs
 
@@ -56,13 +56,13 @@ Administrators can access the device detail page via the "View" function to revi
 - **Keystroke Log Download:** Download the keystroke input log (.txt file) generated during the connection.
 - **Connection Report**
 
-![Connection Logs](/images/screenshots/zh/image022.jpg)
+![Connection Logs](/images/screenshots/en/image022.jpg)
 
 For active connections, administrators can click the force disconnect button or monitor the live session. A confirmation prompt will appear before force disconnecting — click "Confirm" to proceed.
 
 **Export Logs:** Administrators can export connection logs in .xlsx or .csv format.
 
-![Connection Actions](/images/screenshots/zh/image026.jpg)
+![Connection Actions](/images/screenshots/en/image026.jpg)
 
 ## Edit Device
 
@@ -99,7 +99,7 @@ This section controls file transfer permissions between the local machine and th
 - **Password Certificate:** Requires entering the corresponding username and password.
 - **PrivateKey Certificate:** Requires entering the username, private key, and private key passphrase.
 
-![SFTP Settings](/images/screenshots/zh/image030.jpg)
+![SFTP Settings](/images/screenshots/en/image030.jpg)
 
 ### Graphical Session Recording
 
@@ -116,4 +116,4 @@ This feature prevents sensitive data from being copied in or out of the remote d
 - **Disable Copy:** When enabled, users cannot copy data from the remote device to their local machine.
 - **Disable Paste:** When enabled, users cannot paste data from their local machine to the remote device.
 
-![Device Settings](/images/screenshots/zh/image032.jpg)
+![Device Settings](/images/screenshots/en/image032.jpg)
