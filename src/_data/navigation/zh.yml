@@ -1,0 +1,32 @@
+- section: "概覽"
+  items:
+    - title: "產品簡介"
+      url: "/zh/introduction/"
+    - title: "系統登入與帳號安全"
+      url: "/zh/login-security/"
+
+- section: "使用者指南"
+  items:
+    - title: "裝置連線操作"
+      url: "/zh/user/"
+
+- section: "管理員指南"
+  items:
+    - title: "快速設定與總覽"
+      url: "/zh/admin/"
+    - title: "裝置管理"
+      url: "/zh/admin/devices/"
+    - title: "使用者管理"
+      url: "/zh/admin/users/"
+    - title: "憑證設定"
+      url: "/zh/admin/credentials/"
+    - title: "裝置連線授權"
+      url: "/zh/admin/connection-auth/"
+    - title: "浮水印設定"
+      url: "/zh/admin/watermark/"
+    - title: "領域設定"
+      url: "/zh/admin/domains/"
+    - title: "全站設定"
+      url: "/zh/admin/site-settings/"
+    - title: "安全審計"
+      url: "/zh/admin/audit/"

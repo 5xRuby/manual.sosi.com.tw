@@ -1,0 +1,35 @@
+locale_name: "English"
+locale_code: "en"
+
+nav:
+  home: "Home"
+  docs: "Manual"
+  admin: "Admin Console"
+
+sidebar:
+  title: "Manual"
+  overview: "Overview"
+  user_guide: "User Guide"
+  admin: "Admin Guide"
+
+page_nav:
+  previous: "Previous"
+  next: "Next"
+
+on_this_page: "On this page"
+
+footer:
+  copyright: "SOSI Security Gateway"
+  company: "All rights reserved"
+
+lang_switcher:
+  label: "Language"
+
+search:
+  placeholder: "Search..."
+
+callout:
+  info: "Info"
+  warning: "Warning"
+  tip: "Tip"
+  note: "Note"
