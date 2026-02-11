@@ -16,7 +16,7 @@ Administrators can view all authentication domain configurations in the system.
 - Sync Domain Users
 - Bind Test
 
-![Domain List](/images/screenshots/zh/image060.jpg)
+![Domain List](/images/screenshots/en/image060.jpg)
 
 ## Add Domain
 
@@ -73,4 +73,4 @@ When adding or editing a domain, configure the following fields:
 - **Sync Account:** The LDAP server user account used for the sync function.
 - **Sync Account Password:** The password for the LDAP sync account. This field is encrypted.
 
-![Add Domain](/images/screenshots/zh/image062.jpg)
+![Add Domain](/images/screenshots/en/image062.jpg)

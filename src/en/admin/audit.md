@@ -38,7 +38,7 @@ For completed connections with finished transcoding, administrators can perform 
 - **Connection Report:** Generate and download a comprehensive audit report for the connection.
 - **Export Connection Logs:** Located in the upper-right corner of the page. Click to export all logs matching the current search criteria in bulk (.xlsx or .csv format).
 
-![Connection Log List](/images/screenshots/zh/image066.jpg)
+![Connection Log List](/images/screenshots/en/image066.jpg)
 
 ## File Transfer Log List
 
@@ -61,7 +61,7 @@ Administrators can review all historical records through the "File Transfer Log 
 - **Keyword Search:** Supports filtering by "Connection ID", "Device Name", or "User Account".
 - **Upload Time Range:** Set "Upload Time >=" or "Upload Time <=" to precisely locate transfer activity within a specific time period.
 
-![File Transfer Logs](/images/screenshots/zh/image068.jpg)
+![File Transfer Logs](/images/screenshots/en/image068.jpg)
 
 ## Activity Log List
 
@@ -93,4 +93,4 @@ Based on the activity log interface, administrators can use the following featur
 | Item Type | The affected system module (e.g., Login, User, Device) |
 | Item ID | The unique database ID of the affected object |
 
-![Activity Log List](/images/screenshots/zh/image070.jpg)
+![Activity Log List](/images/screenshots/en/image070.jpg)
