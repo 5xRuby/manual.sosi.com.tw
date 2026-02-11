@@ -38,7 +38,7 @@ title: "デバイス一覧"
 
 > アクセス権限を持つユーザー：このリストで、現在このデバイスの使用を認可されているユーザーの一覧を確認できます。
 
-![デバイス情報](/images/screenshots/zh/image020.jpg)
+![デバイス情報](/images/screenshots/ja/image020.jpg)
 
 ### 接続記録
 
@@ -56,13 +56,13 @@ title: "デバイス一覧"
 - **キーロガーダウンロード：** その接続で記録されたキーボード入力記録（.txt ファイル）をダウンロードします。
 - **接続レポート**
 
-![接続記録](/images/screenshots/zh/image022.jpg)
+![接続記録](/images/screenshots/ja/image022.jpg)
 
 接続中のセッションについて、管理者は強制切断ボタンをクリックして接続を切断したり、接続を監視したりできます。強制切断の前に確認メッセージが表示され、「確定」をクリックすると強制切断されます。
 
 **記録のエクスポート：** 管理者は接続記録をエクスポートできます。ファイル形式は .xlsx と .csv に対応しています。
 
-![接続操作](/images/screenshots/zh/image026.jpg)
+![接続操作](/images/screenshots/ja/image026.jpg)
 
 ## デバイスの編集
 
@@ -99,7 +99,7 @@ title: "デバイス一覧"
 - **Password Certificate（パスワード資格情報）：** 対応するアカウントとパスワードの入力が必要です。
 - **PrivateKey Certificate（秘密鍵資格情報）：** アカウント、秘密鍵、および秘密鍵のパスワードの入力が必要です。
 
-![SFTP 設定](/images/screenshots/zh/image030.jpg)
+![SFTP 設定](/images/screenshots/ja/image030.jpg)
 
 ### 画面セッション録画
 
@@ -116,4 +116,4 @@ title: "デバイス一覧"
 - **コピー機能の非表示：** 有効にすると、ユーザーはリモートデバイス内のデータをローカルデバイスにコピーできなくなります。
 - **ペースト機能の非表示：** 有効にすると、ユーザーはローカルデータをリモートデバイスに貼り付けできなくなります。
 
-![デバイス設定](/images/screenshots/zh/image032.jpg)
+![デバイス設定](/images/screenshots/ja/image032.jpg)
