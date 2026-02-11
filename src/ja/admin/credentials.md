@@ -27,7 +27,7 @@ title: "資格情報設定"
 
 **資格情報の削除：** 使用しなくなった資格情報をシステムから削除します。
 
-![資格情報一覧](/images/screenshots/zh/image042.jpg)
+![資格情報一覧](/images/screenshots/ja/image042.jpg)
 
 ## 資格情報の閲覧
 
@@ -35,4 +35,4 @@ title: "資格情報設定"
 
 管理者はこのドロップダウンリストから、その資格情報による権限を付与するデバイスを選択または検索し、送信をクリックすることで認可が完了します。
 
-![資格情報の閲覧](/images/screenshots/zh/image044.jpg)
+![資格情報の閲覧](/images/screenshots/ja/image044.jpg)

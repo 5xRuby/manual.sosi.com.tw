@@ -6,7 +6,7 @@ title: "Site Settings"
 
 If the administrator enables mandatory site-wide two-factor authentication in the Site Settings, all users will be required to enter a two-factor verification code upon login.
 
-![Site-Wide 2FA Settings](/images/screenshots/zh/image064.jpg)
+![Site-Wide 2FA Settings](/images/screenshots/en/image064.jpg)
 
 ## Email Settings
 
