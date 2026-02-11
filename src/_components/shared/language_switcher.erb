@@ -1,0 +1,9 @@
+<div class="language-switcher">
+  <% locales.each do |loc| %>
+    <a href="<%= url_for_locale(loc[:code]) %>"
+       class="lang-option <%= 'active' if loc[:code] == @locale %>"
+       <% if loc[:code] == @locale %>aria-current="true"<% end %>>
+      <%= loc[:label] %>
+    </a>
+  <% end %>
+</div>

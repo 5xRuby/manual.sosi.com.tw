@@ -1,0 +1,32 @@
+- section: "Overview"
+  items:
+    - title: "Product Introduction"
+      url: "/en/introduction/"
+    - title: "Login & Account Security"
+      url: "/en/login-security/"
+
+- section: "User Guide"
+  items:
+    - title: "Device Connection"
+      url: "/en/user/"
+
+- section: "Admin Guide"
+  items:
+    - title: "Quick Setup & Overview"
+      url: "/en/admin/"
+    - title: "Device Management"
+      url: "/en/admin/devices/"
+    - title: "User Management"
+      url: "/en/admin/users/"
+    - title: "Credentials"
+      url: "/en/admin/credentials/"
+    - title: "Connection Authorization"
+      url: "/en/admin/connection-auth/"
+    - title: "Watermark Settings"
+      url: "/en/admin/watermark/"
+    - title: "Domain Settings"
+      url: "/en/admin/domains/"
+    - title: "Site Settings"
+      url: "/en/admin/site-settings/"
+    - title: "Security Audit"
+      url: "/en/admin/audit/"

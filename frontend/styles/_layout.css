@@ -1,0 +1,27 @@
+.docs-layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) minmax(0, 1fr) var(--toc-width);
+  gap: 0;
+  max-width: 100%;
+  min-height: calc(100vh - var(--navbar-height));
+}
+
+.docs.page body > main {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  min-height: auto;
+}
+
+.docs body > main {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  min-height: auto;
+}

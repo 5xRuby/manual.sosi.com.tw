@@ -1,0 +1,19 @@
+<% if prev_page || next_page %>
+<nav class="page-nav">
+  <% if prev_page %>
+    <a href="<%= prev_page["url"] %>" class="page-nav-link page-nav-prev">
+      <span class="page-nav-label"><%= @label_prev %></span>
+      <span class="page-nav-title"><%= prev_page["title"] %></span>
+    </a>
+  <% else %>
+    <span></span>
+  <% end %>
+
+  <% if next_page %>
+    <a href="<%= next_page["url"] %>" class="page-nav-link page-nav-next">
+      <span class="page-nav-label"><%= @label_next %></span>
+      <span class="page-nav-title"><%= next_page["title"] %></span>
+    </a>
+  <% end %>
+</nav>
+<% end %>

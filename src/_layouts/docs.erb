@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="docs-layout">
+  <%= render Docs::Sidebar.new(
+    navigation: locale_nav,
+    current_url: resource.relative_url,
+    locale: current_locale
+  ) %>
+
+  <article class="docs-content">
+    <h1><%= data.title %></h1>
+    <%= yield %>
+
+    <%= render Docs::PageNav.new(
+      navigation: locale_nav,
+      current_url: resource.relative_url,
+      locale: current_locale,
+      label_prev: ui_t("page_nav.previous"),
+      label_next: ui_t("page_nav.next")
+    ) %>
+  </article>
+
+  <aside class="docs-toc" id="docs-toc">
+    <h4><%= ui_t("on_this_page") %></h4>
+    <nav id="toc-nav"></nav>
+  </aside>
+</div>

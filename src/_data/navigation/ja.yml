@@ -1,0 +1,32 @@
+- section: "概要"
+  items:
+    - title: "製品紹介"
+      url: "/ja/introduction/"
+    - title: "ログインとアカウントセキュリティ"
+      url: "/ja/login-security/"
+
+- section: "ユーザーガイド"
+  items:
+    - title: "デバイス接続操作"
+      url: "/ja/user/"
+
+- section: "管理者ガイド"
+  items:
+    - title: "クイック設定と概要"
+      url: "/ja/admin/"
+    - title: "デバイス管理"
+      url: "/ja/admin/devices/"
+    - title: "ユーザー管理"
+      url: "/ja/admin/users/"
+    - title: "資格情報設定"
+      url: "/ja/admin/credentials/"
+    - title: "デバイス接続認可"
+      url: "/ja/admin/connection-auth/"
+    - title: "ウォーターマーク設定"
+      url: "/ja/admin/watermark/"
+    - title: "ドメイン設定"
+      url: "/ja/admin/domains/"
+    - title: "サイト全体設定"
+      url: "/ja/admin/site-settings/"
+    - title: "セキュリティ監査"
+      url: "/ja/admin/audit/"

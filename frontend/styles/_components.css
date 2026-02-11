@@ -1,0 +1,82 @@
+/* Screenshot component */
+.screenshot {
+  margin: var(--space-6) 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.screenshot img {
+  display: block;
+  width: 100%;
+}
+
+.screenshot figcaption {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  background: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+/* Callout component */
+.callout {
+  margin: var(--space-6) 0;
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border-left: 4px solid;
+}
+
+.callout-title {
+  font-weight: 600;
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.callout-body {
+  font-size: var(--text-sm);
+}
+
+.callout-body p:last-child {
+  margin-bottom: 0;
+}
+
+.callout-info {
+  background: var(--color-info-bg);
+  border-color: var(--color-info);
+}
+
+.callout-info .callout-title {
+  color: var(--color-info);
+}
+
+.callout-warning {
+  background: var(--color-warning-bg);
+  border-color: var(--color-warning);
+}
+
+.callout-warning .callout-title {
+  color: var(--color-warning);
+}
+
+.callout-tip {
+  background: var(--color-tip-bg);
+  border-color: var(--color-tip);
+}
+
+.callout-tip .callout-title {
+  color: var(--color-tip);
+}
+
+.callout-note {
+  background: var(--color-note-bg);
+  border-color: var(--color-note);
+}
+
+.callout-note .callout-title {
+  color: var(--color-note);
+}

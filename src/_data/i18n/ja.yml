@@ -1,0 +1,35 @@
+locale_name: "日本語"
+locale_code: "ja"
+
+nav:
+  home: "ホーム"
+  docs: "操作マニュアル"
+  admin: "管理コンソール"
+
+sidebar:
+  title: "操作マニュアル"
+  overview: "概要"
+  user_guide: "ユーザーガイド"
+  admin: "管理者ガイド"
+
+page_nav:
+  previous: "前へ"
+  next: "次へ"
+
+on_this_page: "このページの内容"
+
+footer:
+  copyright: "SOSI セキュリティゲートウェイ"
+  company: "全著作権所有"
+
+lang_switcher:
+  label: "言語"
+
+search:
+  placeholder: "検索..."
+
+callout:
+  info: "情報"
+  warning: "警告"
+  tip: "ヒント"
+  note: "注意"

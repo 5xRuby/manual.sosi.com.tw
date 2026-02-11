@@ -1,0 +1,19 @@
+<aside class="docs-sidebar" id="docs-sidebar">
+  <div class="sidebar-inner">
+    <% @navigation.each do |section| %>
+      <div class="sidebar-section">
+        <h5 class="sidebar-heading"><%= section["section"] %></h5>
+        <ul class="sidebar-list">
+          <% (section["items"] || []).each do |item| %>
+            <li>
+              <a href="<%= item["url"] %>"
+                 class="sidebar-link <%= 'active' if active?(item["url"]) %>">
+                <%= item["title"] %>
+              </a>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+  </div>
+</aside>
