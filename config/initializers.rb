@@ -21,8 +21,8 @@ Bridgetown.configure do |config|
   # Available options are `erb` (default), `serbea`, or `liquid`
   template_engine "erb"
 
-  # Exclude CLAUDE.md files from build
-  config.exclude << "CLAUDE.md"
+  # Exclude CLAUDE.md files from build (all subdirectories)
+  config.exclude << "**/CLAUDE.md"
 
   # Other options you might want to investigate:
 

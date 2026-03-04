@@ -23,6 +23,8 @@ node_modules
 
 # Claude Code
 .claude/
+/*/**/CLAUDE.md
+/*/CLAUDE.md
 
 # Mac files
 .DS_Store
