@@ -1,5 +1,16 @@
 <footer class="site-footer">
   <div class="footer-inner">
-    <p>&copy; <%= Time.now.year %> <%= metadata.company %> &mdash; <%= metadata.product %></p>
+    <div class="footer-lang">
+      <%
+        current_path = resource.relative_url.to_s.sub(%r{^/(zh|en|ja)}, "")
+        locales = { "zh" => "繁中", "en" => "EN", "ja" => "日本語" }
+      %>
+      <% locales.each do |code, label| %>
+        <a href="/<%= code %><%= current_path %>" class="<%= 'active' if code == current_locale.to_s %>">
+          <%= label %>
+        </a>
+      <% end %>
+    </div>
+    <p>Powered by <a href="https://5xruby.com">5xRuby</a> &copy; <%= Time.now.year %></p>
   </div>
 </footer>

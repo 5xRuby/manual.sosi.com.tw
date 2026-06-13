@@ -26,6 +26,8 @@
       url: "/zh/admin/watermark/"
     - title: "領域設定"
       url: "/zh/admin/domains/"
+    - title: "角色權限設定"
+      url: "/zh/admin/roles/"
     - title: "全站設定"
       url: "/zh/admin/site-settings/"
     - title: "安全審計"

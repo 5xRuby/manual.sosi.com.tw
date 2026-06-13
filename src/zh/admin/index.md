@@ -42,5 +42,6 @@ title: "快速設定與總覽"
 | [裝置連線授權](/zh/admin/connection-auth/) | 管理授權群組與連線權限 |
 | [浮水印設定](/zh/admin/watermark/) | 設定螢幕浮水印防護機制 |
 | [領域設定](/zh/admin/domains/) | 管理 LDAP 與認證領域 |
-| [全站設定](/zh/admin/site-settings/) | 2FA 與郵件全域設定 |
+| [角色權限設定](/zh/admin/roles/) | 管理角色權限，控制頁面存取等級 |
+| [全站設定](/zh/admin/site-settings/) | 2FA、郵件、錄影等全域設定 |
 | [安全審計](/zh/admin/audit/) | 連線紀錄、檔案傳輸與操作追蹤 |

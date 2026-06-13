@@ -26,6 +26,8 @@
       url: "/ja/admin/watermark/"
     - title: "ドメイン設定"
       url: "/ja/admin/domains/"
+    - title: "ロール権限設定"
+      url: "/ja/admin/roles/"
     - title: "サイト全体設定"
       url: "/ja/admin/site-settings/"
     - title: "セキュリティ監査"

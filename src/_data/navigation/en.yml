@@ -26,6 +26,8 @@
       url: "/en/admin/watermark/"
     - title: "Domain Settings"
       url: "/en/admin/domains/"
+    - title: "Role Permissions"
+      url: "/en/admin/roles/"
     - title: "Site Settings"
       url: "/en/admin/site-settings/"
     - title: "Security Audit"

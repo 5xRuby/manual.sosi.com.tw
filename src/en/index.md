@@ -31,6 +31,3 @@ SOSI is a high-security gateway that integrates identity authentication with rem
 - [Site Settings](/en/admin/site-settings/) — 2FA and email global settings
 - [Security Audit](/en/admin/audit/) — Connection logs, file transfers, and activity tracking
 
-## Service Provider
-
-5xRuby Inc.
