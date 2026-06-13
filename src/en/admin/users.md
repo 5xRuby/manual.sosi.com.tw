@@ -6,32 +6,56 @@ title: "User List"
 
 ### Search and Filter
 
-Administrators can enter user-related keywords to quickly filter and locate relevant accounts.
+Administrators can use multiple filter criteria to quickly locate users:
+
+| Filter | Description |
+|--------|-------------|
+| Username | Keyword search for fuzzy matching |
+| Role | Filter users by role (e.g., Admin, Default For User) |
+| 2FA Status | Filter by two-factor authentication status (enabled/disabled) |
+| Last Login Time | Set a date range to find users who logged in within that period |
+
+![User Search Panel](/images/screenshots/en/users-search-panel.jpg)
 
 ### List Field Descriptions
 
-The list displays the user ID, authentication method (e.g., LDAP or SOSI), user account, name, role (User/Admin), 2FA enabled status, and last login time.
+The list displays the user ID, authentication method (e.g., LDAP or SOSI), user account, name, **role**, 2FA enabled status, and last login time. The role column includes a show link to view the role's permission settings.
 
-![User List](/images/screenshots/en/image034.jpg)
+![User List](/images/screenshots/en/users-role-search.jpg)
 
-### Batch Import
+### Batch Import and Create User
 
-Supports batch creation of user accounts by uploading .xlsx or .csv files.
+Two independent buttons are available at the bottom of the page:
 
-### View Records
+- **Import (XLSX):** Upload .xlsx files to batch create user accounts.
+- **Create User:** Manually add a single user.
 
-- **User Information:** View the user's configuration details.
-- **Activity Log:** Includes the actions performed by the user, source IP address, update time, item type, and item ID.
-
-![User Records](/images/screenshots/en/image036.jpg)
+![Import and Create](/images/screenshots/en/users-import-create.jpg)
 
 ## Account Maintenance
 
-**Create and Edit:** Administrators can manually add users or navigate to the edit page to modify account details, name, email address, role permissions, and timezone settings.
+### Create and Edit
 
-![Account Edit](/images/screenshots/en/image038.jpg)
+Administrators can manually add users or navigate to the edit page to modify account details, name, email address, **role assignment**, and timezone settings.
 
-**Delete Account:** Administrators can remove user accounts that are no longer needed from the system.
+> **Role replaces the old admin flag:** Use the "Role" dropdown to assign a role to the user, instead of the old "Admin / Normal User" toggle.
+
+![Edit User - Role Dropdown](/images/screenshots/en/users-edit-role.jpg)
+
+### LDAP Sync
+
+For users in an LDAP authentication domain, administrators can click the "Sync" button on the user binding page to instantly synchronize the user's information from the LDAP server via Turbo Stream.
+
+### Delete Account
+
+Administrators can remove user accounts that are no longer needed from the system.
+
+### View Records
+
+- **User Information:** View the user's configuration details and assigned role.
+- **Activity Log:** Includes actions performed by the user, source IP address, update time, item type, and item ID. Supports filtering by event type.
+
+![User Records](/images/screenshots/en/image036.jpg)
 
 ## Two-Factor Authentication
 
