@@ -42,5 +42,6 @@ The Admin Console provides comprehensive system management capabilities, includi
 | [Connection Authorization](/en/admin/connection-auth/) | Manage authorization groups and connection permissions |
 | [Watermark Settings](/en/admin/watermark/) | Configure screen watermark protection |
 | [Domain Settings](/en/admin/domains/) | Manage LDAP and authentication domains |
-| [Site Settings](/en/admin/site-settings/) | 2FA and email global settings |
+| [Role Permissions](/en/admin/roles/) | Manage role-based access control for pages |
+| [Site Settings](/en/admin/site-settings/) | 2FA, email, recording, and other global settings |
 | [Security Audit](/en/admin/audit/) | Connection logs, file transfers, and activity tracking |
