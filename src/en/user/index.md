@@ -6,7 +6,7 @@ This chapter explains how regular users can browse authorized devices, initiate 
 
 ## Browse Devices
 
-After logging in, the system displays your authorized devices as cards. Each card shows the device name, IP address, and connection type (RDP, SSH, or VNC).
+After logging in, the system displays your authorized devices as cards. Each card shows the device name, IP address, and connection type (RDP, SSH, VNC, or Telnet).
 
 ## Start a Connection
 
@@ -22,7 +22,8 @@ Once connected, you can operate the remote desktop or terminal directly in your 
 
 - **RDP Connection:** Operate a Windows remote desktop with mouse and keyboard input.
 - **SSH Connection:** Use the command-line interface to operate Linux/Unix systems.
-- **VNC Connection:** Operate the remote desktop via VNC protocol.
+- **VNC Connection:** Operate remote desktops via the VNC protocol.
+- **Telnet Connection:** Operate terminal devices via the Telnet protocol. Operate the remote desktop via VNC protocol.
 
 > A watermark may appear on screen during the session — this is a security feature configured by the administrator.
 
