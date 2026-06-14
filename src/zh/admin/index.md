@@ -39,7 +39,7 @@ title: "快速設定與總覽"
 | [裝置管理](/zh/admin/devices/) | 管理遠端連線裝置（新增、查看、編輯、設定） |
 | [使用者管理](/zh/admin/users/) | 管理使用者帳號（建立、編輯、2FA 設定） |
 | [憑證設定](/zh/admin/credentials/) | 管理遠端主機登入憑證 |
-| [裝置連線授權](/zh/admin/connection-auth/) | 管理授權群組與連線權限 |
+| [裝置連線授權](/zh/admin/connection-auth/) | 管理授權群組、審核流程與連線權限（含使用者授權群組、授權流程、可行裝置授權、待審裝置授權） |
 | [浮水印設定](/zh/admin/watermark/) | 設定螢幕浮水印防護機制 |
 | [領域設定](/zh/admin/domains/) | 管理 LDAP 與認證領域 |
 | [角色權限設定](/zh/admin/roles/) | 管理角色權限，控制頁面存取等級 |
