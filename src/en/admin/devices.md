@@ -13,7 +13,7 @@ Each device is displayed as a card containing the following key information:
 - **Device Name:** The display name of the device within the system.
 - **Device ID:** A unique identifier automatically assigned by the system.
 - **IP/Hostname:** The network address or hostname of the device.
-- **Device Type:** Supports SSH, RDP, or VNC protocols.
+- **Device Type:** Supports SSH, RDP, VNC, or **Telnet** protocols.
 - **Server Port:** The communication port used by the protocol.
 - **Connection Status:** Displays "Available" or "Connections Full".
 - **Connected Users:** The number of users currently connected to the device.
@@ -31,7 +31,7 @@ Administrators can access the device detail page via the "View" function to revi
 
 - **Device Name:** Displays the device's internal system name.
 - **Device IP / Hostname:** The network address or hostname of the device.
-- **Device Type:** SSH, RDP, or VNC.
+- **Device Type:** SSH, RDP, VNC, or **Telnet**.
 - **Server Port:** The communication port used by the connection protocol.
 - **Notes:** Additional remarks about the device.
 - **Contact Email:** The email address of the device administrator.
@@ -54,6 +54,7 @@ Administrators can access the device detail page via the "View" function to revi
 - **Playback (Screen Recording):** Replay the complete screen capture from the connection session.
 - **Video Download:** Download the screen recording file to local storage.
 - **Keystroke Log Download:** Download the keystroke input log (.txt file) generated during the connection.
+- **Text Log Download (SSH/Telnet):** For SSH or Telnet connections, download the compressed text output log from the session.
 - **Connection Report**
 
 ![Connection Logs](/images/screenshots/en/image022.jpg)
@@ -69,7 +70,7 @@ For active connections, administrators can click the force disconnect button or 
 1. On the device list page, click "Edit".
 2. Modify the device information as needed.
 
-> **Note:** The required fields vary depending on the device type (VNC/RDP/SSH).
+> **Note:** The required fields vary depending on the device type (VNC/RDP/SSH/Telnet).
 
 ### Delete Device
 
@@ -100,6 +101,12 @@ This section controls file transfer permissions between the local machine and th
 - **PrivateKey Certificate:** Requires entering the username, private key, and private key passphrase.
 
 ![SFTP Settings](/images/screenshots/en/image030.jpg)
+
+### Text Logging (Typescript Logging)
+
+For SSH and Telnet device types, text logging can be enabled:
+
+- **Enable Text Logging:** When checked, the system automatically records the text output during a session and compresses it for later audit and download.
 
 ### Graphical Session Recording
 
