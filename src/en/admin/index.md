@@ -39,7 +39,7 @@ The Admin Console provides comprehensive system management capabilities, includi
 | [Device Management](/en/admin/devices/) | Manage remote connection devices (add, view, edit, configure) |
 | [User Management](/en/admin/users/) | Manage user accounts (create, edit, 2FA settings) |
 | [Credential Settings](/en/admin/credentials/) | Manage remote host login credentials |
-| [Connection Authorization](/en/admin/connection-auth/) | Manage authorization groups and connection permissions |
+| [Connection Authorization](/en/admin/connection-auth/) | Manage grant groups, approval flows, and connection permissions (User Grant Groups, Grant Flows, Accessible Device Grants, Pending Grants) |
 | [Watermark Settings](/en/admin/watermark/) | Configure screen watermark protection |
 | [Domain Settings](/en/admin/domains/) | Manage LDAP and authentication domains |
 | [Role Permissions](/en/admin/roles/) | Manage role-based access control for pages |

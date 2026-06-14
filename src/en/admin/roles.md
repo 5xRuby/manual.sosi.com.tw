@@ -17,7 +17,7 @@ Click the "Create Role" button to access the new role form. The following settin
 | Setting | Description |
 |---------|-------------|
 | Default User Role | When checked, newly created users will automatically be assigned this role |
-| Can Join Authorization Groups | When checked, users with this role can be added to authorization groups for approval workflows |
+| Can Join Authorization Groups | When checked, users with this role can be added to authorization groups for approval workflows. Note: Users with the System Administrator (Admin) role can always be added to authorization groups regardless of this flag. |
 | Name | The display name of the role (e.g., System Administrator, Normal User, Auditor) |
 
 ### Page Permission Settings
