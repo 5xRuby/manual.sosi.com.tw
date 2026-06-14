@@ -4,6 +4,9 @@ title: "Domain Settings"
 
 ## Domain List
 
+Domain Settings support both **LDAP** and **OIDC SSO** (e.g., GoTrust) authentication providers. Administrators can add and manage different types of authentication domains.
+
+
 Administrators can view all authentication domain configurations in the system.
 
 - **List Information:** Includes domain ID, name, type, creation time, and sort order.
