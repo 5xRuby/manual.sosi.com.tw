@@ -6,3 +6,4 @@ import components from "$components/**/*.{js,jsx,js.rb,css}"
 
 import "./sidebar-toggle.js"
 import "./on-this-page.js"
+import "./mermaid-render.js"
