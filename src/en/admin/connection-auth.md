@@ -77,3 +77,7 @@ When creating or editing a connection authorization, the following key fields mu
   - **Specific User Account:** When no credential is set, the system enforces login using the specific account entered here.
 
 ![Authorization Details](/images/screenshots/en/image058.jpg)
+
+### Grant Audit Records
+
+Every authorization action—creation, modification, approval, and rejection—is recorded in the Grant Audit log. Audit records include the operator, action type, **reason**, and **notes**, enabling full traceability of authorization changes.
