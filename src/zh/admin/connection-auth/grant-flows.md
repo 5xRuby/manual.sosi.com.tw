@@ -12,11 +12,11 @@ title: "授權流程"
 
 每一個授權申請（[accessible_device_grant](/zh/admin/connection-auth/device-grants/)）包含 **1 個以上**的使用者授權群組（UGG），每個 UGG 作為一個**審核步驟**（Step），並**依序執行**。
 
-```
-授權申請：User "jdoe" → Device "dev-1"
-  ├─ Step 1: UGG-A（例如：部門主管群組）
-  ├─ Step 2: UGG-B（例如：資安審核群組）
-  └─ Step 3: UGG-C（例如：系統管理員群組）
+```mermaid
+flowchart TD
+    APP["📝 授權申請<br/>User jdoe → Device dev-1"] --> S1["Step 1<br/>UGG-A<br/>部門主管群組"]
+    S1 --> S2["Step 2<br/>UGG-B<br/>資安審核群組"]
+    S2 --> S3["Step 3<br/>UGG-C<br/>系統管理員群組"]
 ```
 
 ### 步驟內決策：任一人核准即通過

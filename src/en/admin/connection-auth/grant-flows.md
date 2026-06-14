@@ -12,11 +12,11 @@ Grant Flows define the approval rules for device connection authorization reques
 
 Each grant application ([Accessible Device Grant](/en/admin/connection-auth/device-grants/)) contains **one or more** User Grant Groups (UGGs), each serving as an **approval step** executed **in order**.
 
-```
-Grant Application: User "jdoe" → Device "dev-1"
-  ├─ Step 1: UGG-A (e.g., Department Manager group)
-  ├─ Step 2: UGG-B (e.g., Security Review group)
-  └─ Step 3: UGG-C (e.g., System Administrator group)
+```mermaid
+flowchart TD
+    APP["📝 Grant Application<br/>User jdoe → Device dev-1"] --> S1["Step 1<br/>UGG-A<br/>Department Manager"]
+    S1 --> S2["Step 2<br/>UGG-B<br/>Security Review"]
+    S2 --> S3["Step 3<br/>UGG-C<br/>System Administrator"]
 ```
 
 ### Per-Step Decision: Any Member Can Approve

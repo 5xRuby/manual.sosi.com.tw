@@ -12,11 +12,11 @@ title: "承認フロー"
 
 各認可申請（[有効なデバイス認可](/ja/admin/connection-auth/device-grants/)）には**1つ以上**のユーザー承認グループ（UGG）が含まれ、各UGGは**承認ステップ**として**順次実行**されます。
 
-```
-認可申請：User "jdoe" → Device "dev-1"
-  ├─ Step 1: UGG-A（例：部門長グループ）
-  ├─ Step 2: UGG-B（例：セキュリティ審査グループ）
-  └─ Step 3: UGG-C（例：システム管理者グループ）
+```mermaid
+flowchart TD
+    APP["📝 認可申請<br/>User jdoe → Device dev-1"] --> S1["Step 1<br/>UGG-A<br/>部門長グループ"]
+    S1 --> S2["Step 2<br/>UGG-B<br/>セキュリティ審査"]
+    S2 --> S3["Step 3<br/>UGG-C<br/>システム管理者"]
 ```
 
 ### ステップ内の決定：任意のメンバーが承認可能
