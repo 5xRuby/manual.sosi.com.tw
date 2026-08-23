@@ -10,6 +10,18 @@
                  class="sidebar-link <%= 'active' if active?(item["url"]) %>">
                 <%= item["title"] %>
               </a>
+              <% if item["items"] %>
+                <ul class="sidebar-sublist">
+                  <% item["items"].each do |sub| %>
+                    <li>
+                      <a href="<%= sub["url"] %>"
+                         class="sidebar-link sidebar-sublink <%= 'active' if active?(sub["url"]) %>">
+                        <%= sub["title"] %>
+                      </a>
+                    </li>
+                  <% end %>
+                </ul>
+              <% end %>
             </li>
           <% end %>
         </ul>
