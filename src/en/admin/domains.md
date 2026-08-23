@@ -31,6 +31,7 @@ When adding or editing a domain, configure the following fields:
 - **Type:** Two options are available:
   - **LdapAuthenticateStrategy:** For LDAP or Microsoft Active Directory.
   - **DatabaseAuthenticateStrategy:** SOSI's built-in username/password authentication.
+  - **OidcAuthenticateStrategy:** An OIDC SSO provider (such as GoTrust).
 
 ### LDAP Connection Settings
 
@@ -77,3 +78,44 @@ When adding or editing a domain, configure the following fields:
 - **Sync Account Password:** The password for the LDAP sync account. This field is encrypted.
 
 ![Add Domain](/images/screenshots/en/image062.jpg)
+
+## LDAP Settings Detection
+
+LDAP has many fields and filling them in correctly requires directory-service knowledge; a wrong value is hard to diagnose. The form provides a "Detect settings" action that probes the server and fills in suggested values.
+
+### Steps
+
+1. Enter the LDAP server hostname (port and sync credentials are optional).
+2. Click "Detect settings". The system tries 636 (simple_tls), then 389 (start_tls), then 389 (plaintext) to find a usable connection method, and reads server information to suggest the base DN, encryption method, and account attributes.
+3. If sync credentials were supplied and the bind succeeds, the system lists the available groups. Tick the groups you want to authorize and the matching user filter and admin filter are generated for you — no hand-written LDAP filters.
+4. Review the suggested values, adjust them if needed, and save.
+
+> **Diagnostics:** If the connection on port 636 is reset, the system points out that the server may be missing an LDAPS certificate, rather than reporting a credential or configuration error.
+
+
+![LDAP settings detection](/images/screenshots/en/features/ldap-detect.jpg)
+
+> Detected values are suggestions only. Confirm they match your environment before saving.
+
+## OIDC Connection Test
+
+For an OIDC domain, click "Test connection" in the list to verify the configuration without waiting for a real user to sign in.
+
+1. Click "Test connection" to open the dialog.
+2. Enter a test username and password.
+3. The system first validates the discovery document, then exchanges the credentials with the OIDC provider for a token, and reports the result.
+
+Common results:
+
+| Result | Meaning |
+|--------|---------|
+| Connection succeeded, issuer shown | The configuration is correct |
+| Discovery failed (issuer mismatch) | The issuer returned by the provider differs from the configured issuer URL; fix the setting |
+| Credential validation failed | The configuration is correct, but the test username or password is wrong |
+
+> The test credentials are used only for that request and are never stored in the database.
+
+## Password Expiry Reminder Threshold
+
+An LDAP / AD domain can set the number of days before expiry at which users see a password expiry reminder banner after signing in. The default is 0, meaning no reminder. See [Login and Account Security](/en/login-security/).
+

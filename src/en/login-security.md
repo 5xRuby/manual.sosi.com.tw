@@ -59,3 +59,39 @@ Administrators can help users restore account access through the following two m
 > **Note:** The unlock function only resets the failed login counter. It does not change the user's existing password.
 
 ![Unlock Operation](/images/screenshots/zh/image016.jpg)
+
+## Self-Service Password Change
+
+Users authenticated through LDAP / Active Directory can change their own password **before** it expires, without asking an administrator.
+
+### Availability
+
+| Authentication Method | Self-service password change |
+|----------------------|------------------------------|
+| Built-in SOSI account | ✅ |
+| LDAP / AD | ✅ |
+| OIDC SSO | ❌ (change it at the identity provider) |
+
+### Steps
+
+1. After signing in, open the password change page in your account settings.
+2. Enter your current password, then the new one.
+3. On submit, the system writes the new password to the directory server directly; you can sign in with it immediately.
+
+
+![Self-service password change](/images/screenshots/en/features/self-password-change.jpg)
+
+> **Note:** This only works while the password has **not yet expired**. If the password has already expired and login is blocked, an administrator still has to reset it.
+
+### Password Expiry Reminder
+
+At sign-in the system queries the directory server for the account's password expiry time and, when the remaining days fall below the threshold, shows a reminder banner at the top of the page.
+
+- The threshold is configured per domain in [Domain Settings](/en/admin/domains/); the default is 0 (no reminder).
+- The expiry time is refreshed at every sign-in and after a successful password change.
+- If the directory server marks the account as "password never expires", no reminder is shown.
+
+## Interface Language
+
+The language links in the top-right corner and in the footer switch the interface language (繁體中文 / English / 日本語).
+

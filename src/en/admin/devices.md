@@ -6,6 +6,13 @@ title: "Device List"
 
 Displays information about devices currently available for connection. Administrators can view all devices in the system.
 
+### Searching Devices
+
+The search box at the top matches both the **device name** and the **IP / Hostname** — a hit on either one lists the device. When device names are long, searching by IP is usually faster.
+
+![Device list search (name / IP / hostname)](/images/screenshots/en/features/devices-search.jpg)
+
+
 ### Device Card Information
 
 Each device is displayed as a card containing the following key information:
