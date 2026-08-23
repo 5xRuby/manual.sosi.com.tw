@@ -13,6 +13,8 @@ class Docs::Sidebar < Bridgetown::Component
 
   def section_active?(section)
     items = section["items"] || []
-    items.any? { |item| active?(item["url"]) }
+    items.any? do |item|
+      active?(item["url"]) || (item["items"] || []).any? { |sub| active?(sub["url"]) }
+    end
   end
 end
