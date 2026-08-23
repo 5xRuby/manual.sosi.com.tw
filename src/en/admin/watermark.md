@@ -13,6 +13,17 @@ The watermark feature is a core protection mechanism for preventing data leakage
 - **Text Color and Opacity:** Administrators can set the text color and adjust the opacity (%) to balance security with operational visibility.
 - **Image Dimensions:** Supports configuring the watermark image width and height (px), as well as the spacing between images (px).
 
+### Role-Level Exemption
+
+In addition to the system-wide toggle, the watermark can be disabled for a specific [role](/en/admin/roles/): check "Hide watermark on connections" in the role settings, and users holding that role will not see a watermark during their sessions.
+
+A typical use case is a physician role, where the watermark interferes with reading medical images.
+
+
+![The "Hide watermark on connection" role option](/images/screenshots/en/features/role-watermark.jpg)
+
+> **Note:** This is a role-level exception and is unchecked by default (the watermark stays visible). Monitoring another user's session never shows a watermark and is unaffected by this setting.
+
 ### Watermark Image Upload
 
 - **Format Restriction:** Only PNG format files are accepted.

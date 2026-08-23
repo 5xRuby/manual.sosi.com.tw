@@ -44,4 +44,8 @@ The Admin Console provides comprehensive system management capabilities, includi
 | [Domain Settings](/en/admin/domains/) | Manage LDAP and authentication domains |
 | [Role Permissions](/en/admin/roles/) | Manage role-based access control for pages |
 | [Site Settings](/en/admin/site-settings/) | 2FA, email, recording, and other global settings |
-| [Security Audit](/en/admin/audit/) | Connection logs, file transfers, and activity tracking |
+| [Security Audit](/en/admin/audit/) | Connection logs, file transfers, access logs, and activity tracking |
+
+## System Version
+
+The bottom-left corner of the sidebar shows the deployed system version as "major version (commit)", for example `1.0 (8ac715ac)`. Include this when reporting an issue so the exact deployed build can be identified.

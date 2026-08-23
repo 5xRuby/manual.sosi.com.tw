@@ -36,6 +36,23 @@ If the administrator has enabled SFTP for the device, you can upload and downloa
 
 > All file transfer operations are recorded in the security audit log.
 
+## Recording Playback
+
+Recordings from your connection history can be played back in two formats:
+
+- **Raw .guac playback:** Plays the original Guacamole recording directly, with no wait for transcoding.
+- **Transcoded MP4 playback:** Plays the H.264 MP4 produced by FFmpeg.
+
+Administrators choose the playback file type in Site Settings.
+
+### Player Features
+
+- **Autoplay:** Playback starts automatically when the page opens.
+- **Audio and volume:** Audio captured during the session can be played back, with a volume control.
+- **Responsive layout:** The player adapts to the window width so recordings can be reviewed on different screen sizes.
+
+> **Audit note:** Playing, streaming, and downloading a recording are all written to the [access log](/en/admin/audit/), together with the user, timestamp, and source IP.
+
 ## Disconnect
 
 To end a remote connection:

@@ -53,6 +53,39 @@ Administrators can adjust FFmpeg transcoding parameters (`ffmpeg_variable`) in S
 - **Concurrency:** Set the maximum number of concurrent recording processing jobs.
 - **Disk Threshold:** Set the minimum disk free space percentage. When disk space falls below this threshold, recording processing will be paused, and a disk space warning will be issued.
 
+### Disk Usage
+
+Below the disk section, read-only cards show the actual capacity of each path (the recording path, plus the storage path when local storage is used):
+
+- Each card shows the path, the usage percentage, and a progress bar.
+- The progress bar is colour-coded by usage: blue below 70%, amber at 70% or above, red at 85% or above.
+- Used / Available / Total (GB) are shown as three columns underneath.
+
+
+![Disk space usage](/images/screenshots/en/features/disk-usage.jpg)
+
+> This section is informational only; disk settings cannot be changed here.
+
+> **When it appears:** Only paths the system can actually read are listed. If no cards appear at all, the container serving the site cannot reach the recording path (for example the storage is not mounted); in that state the disk space warning does not work either, so ask your system administrator to check the deployment.
+
 ## Recording Download Settings
 
-Administrators can toggle the encrypted recording download feature (`enable_connection_recording_download`) and configure the auto-cleanup interval for encrypted files.
+Encrypted recording download is a **deployment-level setting**, not part of the Site Settings page. It is set when the system is deployed and requires a redeploy to take effect:
+
+| Setting | Description |
+|---------|-------------|
+| `enable_connection_recording_download` | Whether encrypted download is available. When disabled, the "Download Encrypted Recording" action does not appear on connection records |
+| `connection_recording_download.cleanup_after_days` | Retention period for encrypted files; a scheduled job removes expired files and resets their state |
+
+See [Security Audit](/en/admin/audit/) for the download workflow itself.
+
+## Menu Visibility
+
+### File Transfer Logs
+
+Administrators can hide the "File Transfer Logs" item from the sidebar (shown by default). When hidden, the entry disappears for both administrators and regular users.
+
+
+![File transfer record visibility](/images/screenshots/en/features/file-transfer-toggle.jpg)
+
+> This toggle only controls menu visibility; file transfer logs are still recorded and retained.

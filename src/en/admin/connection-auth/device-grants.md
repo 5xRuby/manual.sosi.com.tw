@@ -36,7 +36,10 @@ Click the "Create Device Connection Authorization" button to access the creation
 |-------|-------------|
 | **User Account** | Select the user to authorize (multi-select supported for batch authorization) |
 | **User Name** | The system automatically displays the name based on the selected account |
-| **Device Name** | Select the target device |
+| **Device Name** | Select the target device. The dropdown is searchable and shows each option as "Name (IP:port)", so you can filter by name, IP, or port (case-insensitive) instead of scrolling through a long list |
+
+
+![Searchable device dropdown](/images/screenshots/en/features/device-select.jpg)
 
 ### Approval Steps
 

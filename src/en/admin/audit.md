@@ -25,7 +25,8 @@ The table displays detailed background information for each connection:
 | User Account | The account of the person who initiated the connection |
 | IP Address | The source or destination IP address of the connection |
 | Connection Time / Disconnect Time | Records the exact start and end times of the connection |
-| Status | Shows the current state of the connection (Ended, Connection Failed, Connected) |
+| Status | Shows the current state of the connection (Ended, Connection Failed, Connected). For failed connections, hover over the status badge to see the failure reason |
+| Failure Reason | For failed connections, records the error message returned by guacd; also included in exported files |
 | Transcoding Status & Duration | Displays the processing progress and transcoding duration of the screen recording file |
 
 ### Actions
@@ -36,9 +37,15 @@ For completed connections with finished transcoding, administrators can perform 
 - **Video Download:** Download the MP4 video file of the connection session to local storage.
 - **Keystroke Log:** Download the keystroke input log recorded during the connection (.txt format).
 - **Connection Report:** Generate and download a comprehensive audit report for the connection.
+- **Download Encrypted Recording:** Downloads the recording packaged with 7-Zip AES-256 encryption (filenames encrypted as well). The system encrypts the file in the background and then displays the extraction password and a download link. Clicking again within the retention window reuses the existing file and password instead of re-encrypting. The retention period and the feature toggle are configured in [Site Settings](/en/admin/site-settings/).
 - **Export Connection Logs:** Located in the upper-right corner of the page. Click to export all logs matching the current search criteria in bulk (.xlsx or .csv format).
 
 ![Connection Log List](/images/screenshots/en/image066.jpg)
+
+> **SFTP failure hint:** If the device has file transfer enabled and the connection fails shortly after being established, the system appends a hint to the error message pointing at a possible incorrect SFTP hostname or port, instead of only showing a generic upstream error. This applies to every device type that supports SFTP (RDP / SSH / VNC / Telnet).
+
+
+![Failed connections with the failure reason](/images/screenshots/en/features/connection-failure-reason.jpg)
 
 ## File Transfer Log List
 
@@ -62,6 +69,30 @@ Administrators can review all historical records through the "File Transfer Log 
 - **Upload Time Range:** Set "Upload Time >=" or "Upload Time <=" to precisely locate transfer activity within a specific time period.
 
 ![File Transfer Logs](/images/screenshots/en/image068.jpg)
+
+## Access Logs
+
+Activity logs only capture writes — records created, updated, or deleted. They cannot capture read-only behaviour. Access logs fill that gap by recording read operations, so auditors can answer "who looked at what".
+
+### Recorded Actions
+
+| Action | Trigger |
+|--------|---------|
+| Monitor | An administrator watches another user's live session |
+| Playback | Playing back or streaming the screen recording of a closed connection |
+| Download | Downloading a recording, an encrypted recording, a keylog, or a typescript |
+
+Each entry records the user, the related connection, the action, the source IP, and the timestamp.
+
+### List and Export
+
+- **Search and pagination:** Filter by user, action type, and time range.
+- **Export:** Supports .xlsx and .csv.
+
+
+![Access log list](/images/screenshots/en/features/access-logs.jpg)
+
+> **Permissions:** Access logs reuse the User Management page permission. When a role sets it to Invisible, the menu item is hidden and the page cannot be reached by URL either.
 
 ## Activity Log List
 
@@ -92,5 +123,17 @@ Based on the activity log interface, administrators can use the following featur
 | Update Time | The exact date and time when the action occurred |
 | Item Type | The affected system module (e.g., Login, User, Device) |
 | Item ID | The unique database ID of the affected object |
+| Changes | Field-level `old value → new value` for the change; also included in .csv / .xlsx exports |
+
+
+![The Changes column in activity logs](/images/screenshots/en/features/activity-log-changes.jpg)
+
+> **Noise reduction:** Entries that only touch `id`, `created_at`, or `updated_at` are excluded from the list so meaningless changes do not clutter the audit trail.
+
+### Audit Coverage
+
+Besides objects such as accounts, devices, and credentials, changes to [Site Settings](/en/admin/site-settings/) and [Domain Settings](/en/admin/domains/) are also recorded.
+
+> **Sensitive data protection:** Password hashes, 2FA secrets, credential plaintext, the SMTP password, the license key, and the OIDC client secret are replaced with `[FILTERED]` before the audit entry is written, so they never appear on screen or in exports.
 
 ![Activity Log List](/images/screenshots/en/image070.jpg)
