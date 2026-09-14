@@ -10,6 +10,10 @@ If the administrator enforces site-wide two-factor authentication in Site Settin
 
 ![Site 2FA Settings](/images/screenshots/en/image064.jpg)
 
+> **New accounts inherit automatically:** Accounts created after site-wide 2FA enforcement is enabled automatically adopt the current site setting.
+>
+> If your system was upgraded from an older version, review the accounts created after enforcement was turned on and confirm they are all covered.
+
 ## Account Lockout Settings
 
 Administrators can configure the automatic unlock time for locked accounts (`lockable_unlock_in`). When a user is locked out due to excessive password failures, the system will automatically unlock the account after the specified duration.
@@ -48,6 +52,17 @@ Administrators can enforce recording functionality through the following global 
 
 Administrators can adjust FFmpeg transcoding parameters (`ffmpeg_variable`) in Site Settings to control the quality and performance of recording transcoding.
 
+### Automatic MP4 Conversion
+
+A site-wide switch (enabled by default) controls whether each recording is converted to an MP4 when the session ends.
+
+- **Enabled:** Every session produces an MP4 that can be downloaded at any time, at the cost of storing each session twice.
+- **Disabled:** No MP4 is produced automatically, and storage grows far more slowly. When a specific recording needs to be taken away, an administrator can click **Convert to MP4** on the connection log; a notification is sent as soon as it is ready.
+
+![Automatic MP4 conversion setting](/images/screenshots/en/features/mp4-conversion-toggle.jpg)
+
+> **Playback is unaffected.** Online playback reads the original recording file, so every session can still be played, seeked and inspected alongside its keystroke log regardless of this switch.
+
 ### Recording Concurrency and Disk Threshold
 
 - **Concurrency:** Set the maximum number of concurrent recording processing jobs.
@@ -78,6 +93,14 @@ Encrypted recording download is a **deployment-level setting**, not part of the 
 | `connection_recording_download.cleanup_after_days` | Retention period for encrypted files; a scheduled job removes expired files and resets their state |
 
 See [Security Audit](/en/admin/audit/) for the download workflow itself.
+
+## Connection Info Bar Position
+
+The floating info bar on the remote desktop screen (device name, connection time, user name) is docked at the top by default and can be moved to the **top, bottom, left or right**.
+
+Use this when the target system has its own toolbar along the top edge and the two overlap.
+
+![Connection info bar position setting](/images/screenshots/en/features/info-bar-position.jpg)
 
 ## Menu Visibility
 

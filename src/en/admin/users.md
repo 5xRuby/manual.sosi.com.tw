@@ -42,6 +42,8 @@ Administrators can manually add users or navigate to the edit page to modify acc
 
 ![Edit User - Role Dropdown](/images/screenshots/en/users-edit-role.jpg)
 
+> **Clear individual device grants before promoting to administrator:** A user cannot be promoted to an administrator role while individual [connection authorizations](/en/admin/connection-auth/) remain on the account; the system blocks the change and asks you to remove them first. Administrators can reach every device anyway, and leaving the old grants in place means they would silently apply again if the account is later demoted.
+
 ### LDAP Sync
 
 For users in an LDAP authentication domain, administrators can click the "Sync" button on the user binding page to instantly synchronize the user's information from the LDAP server via Turbo Stream.

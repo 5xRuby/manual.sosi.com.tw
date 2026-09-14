@@ -24,8 +24,11 @@ Once connected, you can operate the remote desktop or terminal directly in your 
 - **SSH Connection:** Use the command-line interface to operate Linux/Unix systems.
 - **VNC Connection:** Operate remote desktops via the VNC protocol.
 - **Telnet Connection:** Operate terminal devices via the Telnet protocol. Operate the remote desktop via VNC protocol.
+- **BrowserApp Connection:** Work with an internal web system inside a locked-down full-screen browser. There is no address bar and no other window; sign-in happens automatically, so you never type the password. The administrator limits which URLs you can reach, and the whole browser environment is wiped when the session ends.
 
 > A watermark may appear on screen during the session — this is a security feature configured by the administrator.
+
+> The connection info bar (device name, connection time, user name) sits at the top by default; administrators can move it to the bottom, left or right.
 
 ## File Transfer
 
@@ -44,6 +47,8 @@ Recordings from your connection history can be played back in two formats:
 - **Transcoded MP4 playback:** Plays the H.264 MP4 produced by FFmpeg.
 
 Administrators choose the playback file type in Site Settings.
+
+> If automatic MP4 conversion is turned off in Site Settings, sessions do not produce an MP4 on their own. Playback is unaffected — every session can still be opened and watched from the original recording.
 
 ### Player Features
 
