@@ -35,6 +35,7 @@ For completed connections with finished transcoding, administrators can perform 
 
 - **Playback:** View the screen recording of the connection session directly online.
 - **Video Download:** Download the MP4 video file of the connection session to local storage.
+- **Convert to MP4:** When automatic MP4 conversion is turned off in [Site Settings](/en/admin/site-settings/), sessions do not produce an MP4 on their own. An administrator converts the recording here on demand and is notified once it is ready. Recordings that have not been converted can still be played back directly.
 - **Keystroke Log:** Download the keystroke input log recorded during the connection (.txt format).
 - **Connection Report:** Generate and download a comprehensive audit report for the connection.
 - **Download Encrypted Recording:** Downloads the recording packaged with 7-Zip AES-256 encryption (filenames encrypted as well). The system encrypts the file in the background and then displays the extraction password and a download link. Clicking again within the retention window reuses the existing file and password instead of re-encrypting. The retention period and the feature toggle are configured in [Site Settings](/en/admin/site-settings/).

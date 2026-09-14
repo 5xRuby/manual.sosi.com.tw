@@ -25,6 +25,8 @@
           url: "/en/admin/devices/rdp/"
         - title: "Telnet Settings"
           url: "/en/admin/devices/telnet/"
+        - title: "BrowserApp Settings"
+          url: "/en/admin/devices/browserapp/"
     - title: "User Management"
       url: "/en/admin/users/"
     - title: "Credentials"

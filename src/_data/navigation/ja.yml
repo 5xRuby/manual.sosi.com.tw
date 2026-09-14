@@ -25,6 +25,8 @@
           url: "/ja/admin/devices/rdp/"
         - title: "Telnet 設定"
           url: "/ja/admin/devices/telnet/"
+        - title: "BrowserApp 設定"
+          url: "/ja/admin/devices/browserapp/"
     - title: "ユーザー管理"
       url: "/ja/admin/users/"
     - title: "資格情報設定"

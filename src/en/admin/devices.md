@@ -20,7 +20,7 @@ Each device is displayed as a card containing the following key information:
 - **Device Name:** The display name of the device within the system.
 - **Device ID:** A unique identifier automatically assigned by the system.
 - **IP/Hostname:** The network address or hostname of the device.
-- **Device Type:** Supports SSH, RDP, VNC, or **Telnet** protocols.
+- **Device Type:** Supports the SSH, RDP, VNC and **Telnet** protocols, or **BrowserApp** (isolated browser access).
 - **Server Port:** The communication port used by the protocol.
 - **Connection Status:** Displays "Available" or "Connections Full".
 - **Connected Users:** The number of users currently connected to the device.
@@ -30,6 +30,8 @@ Each device is displayed as a card containing the following key information:
 1. On the device list page, click "Create Device".
 2. Enter the device information in the designated fields. The required fields vary depending on the device type (VNC/RDP/SSH parameters differ).
 
+> **BrowserApp:** To bring an internal web system rather than a remote host under management, choose the BrowserApp type — see [BrowserApp Device Settings](/en/admin/devices/browserapp/).
+
 ## View Device
 
 ### Device Information
@@ -38,7 +40,7 @@ Administrators can access the device detail page via the "View" function to revi
 
 - **Device Name:** Displays the device's internal system name.
 - **Device IP / Hostname:** The network address or hostname of the device.
-- **Device Type:** SSH, RDP, VNC, or **Telnet**.
+- **Device Type:** SSH, RDP, VNC, **Telnet**, or **BrowserApp**.
 - **Server Port:** The communication port used by the connection protocol.
 - **Notes:** Additional remarks about the device.
 - **Contact Email:** The email address of the device administrator.

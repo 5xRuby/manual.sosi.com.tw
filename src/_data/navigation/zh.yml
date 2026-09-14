@@ -25,6 +25,8 @@
           url: "/zh/admin/devices/rdp/"
         - title: "Telnet 設定"
           url: "/zh/admin/devices/telnet/"
+        - title: "BrowserApp 設定"
+          url: "/zh/admin/devices/browserapp/"
     - title: "使用者管理"
       url: "/zh/admin/users/"
     - title: "憑證設定"
