@@ -31,6 +31,8 @@
       url: "/zh/admin/users/"
     - title: "憑證設定"
       url: "/zh/admin/credentials/"
+    - title: "群組批次授權"
+      url: "/zh/admin/group-grants/"
     - title: "裝置連線授權"
       url: "/zh/admin/connection-auth/"
     - title: "使用者授權群組"

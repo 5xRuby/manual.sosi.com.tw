@@ -31,6 +31,8 @@
       url: "/en/admin/users/"
     - title: "Credentials"
       url: "/en/admin/credentials/"
+    - title: "Group Bulk Authorization"
+      url: "/en/admin/group-grants/"
     - title: "Connection Authorization"
       url: "/en/admin/connection-auth/"
     - title: "User Grant Groups"

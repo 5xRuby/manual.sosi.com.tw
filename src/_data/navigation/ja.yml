@@ -31,6 +31,8 @@
       url: "/ja/admin/users/"
     - title: "資格情報設定"
       url: "/ja/admin/credentials/"
+    - title: "グループ一括権限付与"
+      url: "/ja/admin/group-grants/"
     - title: "デバイス接続認可"
       url: "/ja/admin/connection-auth/"
     - title: "ユーザー承認グループ"
