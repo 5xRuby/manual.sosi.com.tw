@@ -48,6 +48,31 @@ Administrators can enforce recording functionality through the following global 
 | Force Graphical Session Recording (`session_recording_always_enabled`) | When enabled, all connections will have screen recording forced |
 | Force Keystroke Logging (`include_keys_always_enabled`) | When enabled, all connections will have keystroke logging forced |
 
+### Recording Quality and Resolution
+
+The recording settings block has two parameters that directly affect recording file size.
+
+![Recording quality and resolution](/images/screenshots/en/features/recording-quality.jpg)
+
+**Guacamole Resolution** sets the frame size of the transcoded recording. It can be entered two ways:
+
+- **Standard resolution:** Pick a common size from the dropdown (1280x720, 1366x768, 1600x900, 1920x1080, 2560x1440, 3840x2160).
+- **Custom resolution:** Type your own `width x height`; the format is validated on save.
+
+> This value is passed straight into the transcoding command, so a malformed value makes the conversion fail. The dropdown removes that class of typo; if you do need a custom value, the format is checked before it is saved.
+
+**Recording Quality** offers three levels for trading image quality against storage:
+
+| Option | Description |
+|---|---|
+| High quality (largest files) | Best image quality, largest files |
+| Balanced (recommended) | The default. Almost indistinguishable from high quality on remote desktop content, with noticeably smaller files |
+| Space saving | Smallest files, visibly softer image |
+
+> **Why is the default "balanced" rather than "high quality"?** A remote desktop is synthetic imagery — large flat areas, text, and none of the noise of real-world video. On that kind of content the extra data the highest quality spends is almost invisible, while the files grow considerably.
+
+> **This setting applies only to recordings made from now on.** Existing MP4 files were produced with the previous parameters. To shrink those as well, ask your system administrator to run the re-encoding maintenance task.
+
 ### FFmpeg Transcoding Settings
 
 Administrators can adjust FFmpeg transcoding parameters (`ffmpeg_variable`) in Site Settings to control the quality and performance of recording transcoding.
@@ -101,6 +126,14 @@ The floating info bar on the remote desktop screen (device name, connection time
 Use this when the target system has its own toolbar along the top edge and the two overlap.
 
 ![Connection info bar position setting](/images/screenshots/en/features/info-bar-position.jpg)
+
+## Device List Page Size
+
+Sets how many devices are shown per page on the device list (`/devices`). **The table and card layouts are configured separately.**
+
+![Device list page size](/images/screenshots/en/features/devices-per-page.jpg)
+
+Leaving a field blank or entering 0 uses the default (50 for table, 12 for cards). The layout itself is determined by the user's role — see [Device List](/en/admin/devices/).
 
 ## Menu Visibility
 

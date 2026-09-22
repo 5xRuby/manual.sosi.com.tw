@@ -13,6 +13,19 @@ The search box at the top matches both the **device name** and the **IP / Hostna
 ![Device list search (name / IP / hostname)](/images/screenshots/en/features/devices-search.jpg)
 
 
+### List Layout (Cards or Table)
+
+The device list offers two layouts, **cards** and **table**. Which one a user sees is set per role under **Role Permissions** → **Device List Layout**, so different roles can differ.
+
+- **Card layout:** One card per device, spacious and easy to read — suited to regular users with a handful of devices.
+- **Table layout:** One row per device, information-dense — suited to administrators who need to scan many devices at once.
+
+![Device list, table layout](/images/screenshots/en/features/devices-table-import.jpg)
+
+In the table layout the **Operations** column uses icon buttons: from left to right, **connect**, **show**, **edit** and **delete**. Hover over an icon to see what it does. Long remarks are truncated, with the full text shown on hover. On narrow windows the table scrolls horizontally.
+
+The number of devices per page is configured in [Site Settings](/en/admin/site-settings/), separately for each layout.
+
 ### Device Card Information
 
 Each device is displayed as a card containing the following key information:
@@ -31,6 +44,34 @@ Each device is displayed as a card containing the following key information:
 2. Enter the device information in the designated fields. The required fields vary depending on the device type (VNC/RDP/SSH parameters differ).
 
 > **BrowserApp:** To bring an internal web system rather than a remote host under management, choose the BrowserApp type — see [BrowserApp Device Settings](/en/admin/devices/browserapp/).
+
+## Bulk Device Import
+
+When you need to create many devices at once, you can import them from a spreadsheet instead of filling in the **Create Device** form for each one.
+
+### Steps
+
+1. On the device list, click **Download Import Template** to get the xlsx template.
+2. Open the template and fill in one device per row. Every column heading in the first row carries a **cell comment** explaining how to fill that column — hover over it rather than going back to the documentation.
+3. Return to the device list, click **Import (XLSX)** and upload your file.
+4. The devices are created in the background and the result is reported on screen, including the number created and a list of any failures.
+
+### What the template covers
+
+The template covers 22 columns: the core device fields, SFTP settings and connection policies — device name, address, type, port, maximum connections, remarks, owner email, certificate name, plus whether recording is enabled and whether copy, paste, upload and download are disabled.
+
+Protocol-specific parameters (RDP resolution, SSH host key and the like) are **not in the template** — there are far too many of them, and including them all would produce a spreadsheet nobody could finish. Imported devices take the system defaults for these; adjust them afterwards on the individual device's edit page.
+
+### Duplicates and failures
+
+- **Duplicates are detected on address + port**, not on the device name. The same machine may legitimately be registered twice under the same name for RDP and SSH; what really identifies "the same service" is the address and port together.
+- Rows that duplicate an existing device, or duplicate another row in the same file, are rejected and listed as failures. **Existing devices are never overwritten.**
+- The **certificate name** column matches an existing certificate by name; a row fails if no match is found. SFTP and temporary certificates are not eligible.
+- Recording columns remain subject to the site-wide mandatory recording policy — the spreadsheet cannot override it.
+
+> **Missing columns are tolerated; wrong values are not.** An older template that lacks columns added since will still import, with the missing columns taking their defaults. A required field left blank, however, is still rejected by validation.
+
+> **User import and export now share one format.** The xlsx exported from the user list uses the same columns as the import template, so adding the password column is enough to load it straight back in — nothing shifts out of alignment.
 
 ## View Device
 
